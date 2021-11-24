@@ -11,8 +11,8 @@ class Book {
     bookDiv.className = 'book';
     bookDiv.id = `book-${this.id}`;
     const bookElement = `
-        <h4 class="bookTitle">${this.title}</h4>
-        <p class="bookAuthor">${this.author}</p>
+        <h4 class="bookTitle">"${this.title}"</h4>
+        <p class="bookAuthor">By: ${this.author}</p>
         <button class="removeBtn">Remove</button>
       `;
     bookDiv.innerHTML += bookElement;
@@ -60,6 +60,8 @@ const initialLoad = () => {
     const bookAuthor = document.getElementById('author').value;
     const book = new Book(bookTitle, bookAuthor);
     book.add();
+    document.getElementById('title').value = "";
+    document.getElementById('author').value = "";
   });
 };
 
