@@ -60,8 +60,8 @@ const initialLoad = () => {
     const bookAuthor = document.getElementById('author').value;
     const book = new Book(bookTitle, bookAuthor);
     book.add();
-    document.getElementById('title').value = "";
-    document.getElementById('author').value = "";
+    document.getElementById('title').value = '';
+    document.getElementById('author').value = '';
   });
 };
 
