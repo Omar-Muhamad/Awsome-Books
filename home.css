@@ -7,6 +7,7 @@
 .container {
   font-family: "Lato", sans-serif;
   width: 80%;
+  max-width: 900px;
   margin: auto;
   padding: 30px;
   margin-top: 20px;
@@ -23,8 +24,11 @@
   background-color: lightskyblue;
   padding: 7px;
   display: grid;
-  grid-template-columns: calc(3,1fr);
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 4fr;
+  align-items: center;
 }
+
 .book:nth-child(even) {
   background-color: #fff;
 }
@@ -32,14 +36,13 @@
 .bookTitle {
   font-size: 1.1em;
   font-weight: bold;
-  /* flex: 1; */
 }
 
 .bookAuthor {
   margin-left: 0;
   font-size: 0.9em;
   font-weight: bold;
-  /* flex: 1; */
+  justify-self: left;
 }
 
 .removeBtn {
@@ -49,7 +52,7 @@
   font-weight: bold;
   border: 2px solid black;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
-  /* flex: 5; */
+  justify-self: right;
 }
 
 .hr {
@@ -62,8 +65,8 @@
 .addBook {
   width: 60%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-auto-flow: row;
   gap: 15px;
 }
 
@@ -79,12 +82,10 @@ input {
 }
 
 #addBtn {
-
-  margin: 0 auto;
-  padding: 7px 15px;
+  padding: 7px 30px;
   font-size: 0.9em;
   font-weight: bold;
   border: 2px solid black;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
-  text-align: right;
+  justify-self: right;
 }
