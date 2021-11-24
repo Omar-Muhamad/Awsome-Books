@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: 'Lato', sans-serif;
+  width: 60%;
+  margin: auto;
+  padding: 30px;
+  margin-top: 20px;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.booksCont {
+  width: 60%;
+  margin: 20px auto;
+  border: 1px solid gray;
+}
+
+.book {
+  padding: 0 40px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bookTitle {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.bookAuthor {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.removeBtn {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px 0;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.addBook {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 3px;
+}
+
+#addBtn {
+  width: 35%;
+  margin: 0 auto;
+  padding: 5px 0;
+  font-size: 0.9em;
+  font-weight: bold;
+}
