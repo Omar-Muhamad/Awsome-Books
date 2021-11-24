@@ -5,45 +5,58 @@
 }
 
 .container {
-  font-family: 'Lato', sans-serif;
-  width: 60%;
+  font-family: "Lato", sans-serif;
+  width: 80%;
   margin: auto;
   padding: 30px;
   margin-top: 20px;
-  border: 1px solid gray;
   text-align: center;
 }
 
 .booksCont {
-  width: 60%;
   margin: 20px auto;
-  border: 1px solid gray;
+  border: 3px solid black;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .book {
-  padding: 0 40px;
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  background-color: lightskyblue;
+  padding: 7px;
+  display: grid;
+  grid-template-columns: calc(3,1fr);
+}
+.book:nth-child(even) {
+  background-color: #fff;
 }
 
 .bookTitle {
   font-size: 1.1em;
   font-weight: bold;
+  /* flex: 1; */
 }
 
 .bookAuthor {
+  margin-left: 0;
   font-size: 0.9em;
   font-weight: bold;
+  /* flex: 1; */
 }
 
 .removeBtn {
-  width: 50%;
-  margin: 0 auto;
-  padding: 5px 0;
+  width: 100px;
+  padding: 5px 10px;
   font-size: 0.9em;
   font-weight: bold;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  /* flex: 5; */
+}
+
+.hr {
+  height: 3px;
+  background-color: black;
+  width: 150px;
+  margin: 40px auto;
 }
 
 .addBook {
@@ -51,17 +64,27 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+}
+
+.addBook h2 {
+  font-size: 1.8em;
+  font-weight: bold;
 }
 
 input {
-  padding: 3px;
+  padding: 7px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 #addBtn {
-  width: 35%;
+
   margin: 0 auto;
-  padding: 5px 0;
+  padding: 7px 15px;
   font-size: 0.9em;
   font-weight: bold;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  text-align: right;
 }

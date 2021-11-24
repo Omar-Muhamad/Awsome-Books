@@ -14,7 +14,6 @@ class Book {
         <h4 class="bookTitle">${this.title}</h4>
         <p class="bookAuthor">${this.author}</p>
         <button class="removeBtn">Remove</button>
-        <hr>
       `;
     bookDiv.innerHTML += bookElement;
     const inputData = {
