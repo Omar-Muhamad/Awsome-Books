@@ -20,6 +20,14 @@
 - JavaScript.
 - Linters.
 
+## How to run locally:
+
+1. Clone the project using git-bash or Githup Desktop.
+2. Open the project folder with VSCode or any Editor.
+3. Open index.html file and open with live server.
+4. If you don't have live server extension install it
+   or open index.html manually from your file explorer.
+
 ## Authors
 
 👤 **Omar Muhammad**
