@@ -82,3 +82,26 @@ const initialLoad = () => {
 };
 
 initialLoad();
+
+const bookListBtn = document.getElementById('bookListBtn');
+const bookList = document.getElementById('bookList');
+const addBookBtn = document.getElementById('addBookBtn');
+const addBook = document.getElementById('addBook');
+const contactBtn = document.getElementById('contactBtn');
+const contact = document.getElementById('contact');
+
+bookListBtn.addEventListener('click', () => {
+  bookList.style.display = 'block';
+  addBook.style.display = 'none';
+  contact.style.display = 'none';
+});
+addBookBtn.addEventListener('click', () => {
+  addBook.style.display = 'block';
+  bookList.style.display = 'none';
+  contact.style.display = 'none';
+});
+contactBtn.addEventListener('click', () => {
+  contact.style.display = 'block';
+  bookList.style.display = 'none';
+  addBook.style.display = 'none';
+});
