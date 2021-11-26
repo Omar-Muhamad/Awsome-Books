@@ -1,3 +1,5 @@
+// ################ Book class with Add and Remove Methods ################
+
 class Book {
   constructor(title, author, id = Math.floor(Math.random() * 10000)) {
     this.title = title;
@@ -44,6 +46,8 @@ class Book {
   }
 }
 
+// ################ Function To load initial book Data   ################
+
 const initialLoad = () => {
   const storedData = JSON.parse(localStorage.getItem('storedData'));
   if (storedData) {
@@ -83,6 +87,8 @@ const initialLoad = () => {
 
 initialLoad();
 
+// ################ Make the website SPA ################
+
 const bookListBtn = document.getElementById('bookListBtn');
 const bookList = document.getElementById('bookList');
 const addBookBtn = document.getElementById('addBookBtn');
@@ -105,3 +111,8 @@ contactBtn.addEventListener('click', () => {
   bookList.style.display = 'none';
   addBook.style.display = 'none';
 });
+
+// ################ Add Date and Time to the page  ################
+
+const dateAndTime = document.getElementById('dateAndTime');
+dateAndTime.innerHTML = window.luxon.DateTime.local();

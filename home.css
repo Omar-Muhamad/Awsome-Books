@@ -19,7 +19,7 @@ body {
   height: calc(100vh - 120px);
   display: grid;
   align-items: center;
-  width: 90%;
+  width: 80%;
   margin: auto;
   text-align: center;
 }
@@ -61,12 +61,12 @@ h2 {
 /* ########### Header nav ########## */
 
 header {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
-  background-color: #fff;
 }
 
 nav {
+  background-color: #fff;
   margin-top: 5px;
   height: 55px;
   padding: 0 15px;
@@ -104,10 +104,18 @@ nav {
   margin-right: 5px;
 }
 
+.dateAndTime {
+  text-align: right;
+  padding-right: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
 /* ########### Book List Section ########## */
 
 #bookList {
   display: block;
+  transition: all 0.5s;
 }
 
 .booksCont {
@@ -158,6 +166,7 @@ nav {
 
 #addBook {
   display: none;
+  transition: all 0.5s;
 }
 
 .addBook {
@@ -186,6 +195,7 @@ input {
 
 #contact {
   display: none;
+  transition: all 0.5s;
 }
 
 .contactInfo {
@@ -216,6 +226,7 @@ input {
   font-size: 1.1em;
   margin-top: 10px;
 }
+
 .contact ul li i {
   color: #4fce5d;
   font-size: 1.2em;
@@ -230,8 +241,8 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  max-width: 990px;
-  width: 90%;
+  max-width: 880px;
+  width: 80%;
   background-color: #fff;
   margin: 0 auto;
   margin-top: 70px;
@@ -247,6 +258,6 @@ footer {
   font-weight: bold;
 }
 
-footer a {
+.footerLink {
   font-size: 1em;
 }
