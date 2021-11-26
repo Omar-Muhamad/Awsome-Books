@@ -45,14 +45,30 @@ class Book {
 }
 
 const initialLoad = () => {
-  const storedData = JSON.parse(localStorage.getItem('storedData')) || [];
+  const storedData = JSON.parse(localStorage.getItem('storedData'));
   if (storedData) {
     storedData.forEach((book) => {
       const newBook = new Book(book.title, book.author, book.id);
       newBook.add();
     });
   }
-  localStorage.setItem('storedData', JSON.stringify(storedData));
+
+  const data = [
+    {
+      title: 'The Lord of the Rings',
+      author: 'J.R.R. Tolkien',
+    },
+    {
+      title: 'Harry Potter',
+      author: 'J.K. Rowling',
+    },
+    {
+      title: 'Rich Dad Poor Dad',
+      author: 'Robert Kiyosaki',
+    },
+  ];
+
+  localStorage.setItem('storedData', JSON.stringify(data));
 
   const addBtn = document.getElementById('addBtn');
   addBtn.addEventListener('click', () => {

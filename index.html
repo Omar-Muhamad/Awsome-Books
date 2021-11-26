@@ -11,20 +11,86 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <title>Awesome Books</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Awesome Books</h1>
-      <div class="booksCont" id="booksCont"></div>
-      <div class="hr"></div>
-      <div class="addBook">
-        <h2>Add a new Book</h2>
-        <input type="text" id="title" placeholder="Add Book Title" required />
-        <input type="text" id="author" placeholder="Add Book Author" required />
-        <button type="submit" id="addBtn">Add</button>
-      </div>
+    <header>
+      <nav id="mainNav">
+        <a class="logo" href="index.html">
+          <i class="fas fa-book-reader fa-lg"></i> Awesome Books</a
+        >
+        <ul class="navLinks">
+          <li class="navLink"><a id="bookListBtn" href="#bookList">Book List</a></li>
+          <li class="navLink"><a id="addBookBtn" href="#addBook">Add Book</a></li>
+          <li class="navLink"><a id="contactBtn" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="bodyContainer">
+      <section id="bookList">
+        <div class="container">
+          <h2><i class="fas fa-book fa-lg"></i> Book List</h2>
+          <div class="booksCont" id="booksCont"></div>
+        </div>
+      </section>
+      <section id="addBook">
+        <div class="container addBook">
+          <h2><i class="fas fa-book-medical fa-lg"></i> Add a new Book</h2>
+          <input type="text" id="title" placeholder="Add Book Title" required />
+          <input type="text" id="author" placeholder="Add Book Author" required />
+          <button type="submit" id="addBtn">Add</button>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2><i class="fas fa-address-book fa-lg"></i> Contact Information</h2>
+          <div class="contactInfo">
+            <h4>
+              Do you have any questions or want to say "Hello"?<br />You can reach
+              out to us:
+            </h4>
+            <ul>
+              <li>
+                Our e-mail:
+                <a href="mailto:eng.omarmuhammad@gmail.com"
+                  >eng.omarmuhammad@gmail.com</a
+                >
+              </li>
+              <li>
+                Our phone number: <i class="fab fa-whatsapp"></i
+                ><a
+                  href="https://api.whatsapp.com/send/?phone=%2B201114277131&text&app_absent=0"
+                  target="_blank"
+                  >+201114277131</a
+                >
+              </li>
+              <li>
+                Our address: <i class="fab fa-whatsapp"></i
+                ><a href="https://goo.gl/maps/a5axKGRC7WHKhkq1A" target="_blank"
+                  >Alexanderia, Egypt</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
+    <footer>
+      <p>
+        Copyright
+        <a href="mailto:eng.omarmuhammad@gmail.com"
+          >Omar Muhammad</a
+        >
+        &copy;2021
+      </p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
