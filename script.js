@@ -115,4 +115,4 @@ contactBtn.addEventListener('click', () => {
 // ################ Add Date and Time to the page  ################
 
 const dateAndTime = document.getElementById('dateAndTime');
-dateAndTime.innerHTML = window.luxon.DateTime.local();
+dateAndTime.innerHTML = window.luxon.DateTime.local().toFormat('dd LLL, yyyy | t');

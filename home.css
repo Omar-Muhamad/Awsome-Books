@@ -52,6 +52,10 @@ h2 {
   margin-bottom: 40px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .container {
   width: 100%;
   margin: auto;
