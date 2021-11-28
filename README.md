@@ -9,9 +9,15 @@
 3.  Make these methods to add and remove books data to DOM and local storage.
 4.  Add some basic styling and check linters errors.
 
+# Site Live Demo
+
+[Live Demo Link](https://omar-muhamad.github.io/Awsome-Books/)
+
 # Site Screenshots
 
 ![screenshot](Website-screenshoot.png)
+![screenshot](Website-screenshoot-2.png)
+![screenshot](Website-screenshoot-3.png)
 
 ## Built With
 

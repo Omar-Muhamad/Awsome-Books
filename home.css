@@ -5,27 +5,23 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
-
 /* ########### General Styling ########## */
-
-body {
-  max-width: 1100px;
-  margin: 0 auto;
-  color: #004570;
-  background-color: rgb(200, 240, 255);
-}
-
 .bodyContainer {
-  height: calc(100vh - 120px);
-  display: grid;
-  align-items: center;
-  width: 80%;
-  margin: auto;
-  text-align: center;
+  max-width: 1000px;
+  margin: 5px auto;
+  color: #004570;
+  border: 3px solid #004570;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+  min-height: calc(100vh - 10px);
+  padding: 5px;
+  background-color: rgb(200, 240, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 a {
-  color: #004570;
   font-size: 1.1em;
   font-weight: 700;
   text-decoration: none;
@@ -41,15 +37,19 @@ i {
 }
 
 h2 {
-  width: fit-content;
-  margin: 0 auto;
+  margin: 20px auto;
   font-size: 1.8em;
   font-weight: bold;
-  background-color: #fff;
-  border: 3px solid #004570;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-  padding: 13px 30px;
-  margin-bottom: 40px;
+}
+
+button {
+  width: fit-content;
+  padding: 10px 30px;
+  font-weight: bold;
+  border: 2px solid #004570;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  font-size: 1em;
+  font-weight: bold;
 }
 
 button:hover {
@@ -57,21 +57,19 @@ button:hover {
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   margin: auto;
+  margin-bottom: 50px;
   text-align: center;
 }
-
 /* ########### Header nav ########## */
-
 header {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
 nav {
   background-color: #fff;
-  margin-top: 5px;
   height: 55px;
   padding: 0 15px;
   border: 3px solid #004570;
@@ -100,8 +98,6 @@ nav {
 
 .navLink a:hover {
   color: #ff3860;
-  transform: scale(2);
-  transition: 0.5s;
 }
 
 .logo i {
@@ -114,24 +110,29 @@ nav {
   margin-top: 5px;
   font-weight: bold;
 }
-
 /* ########### Book List Section ########## */
-
 #bookList {
   display: block;
-  transition: all 0.5s;
+}
+
+.bookContainer {
+  display: grid;
+  gap: 10px;
+}
+
+.addNewBtn {
+  justify-self: center;
 }
 
 .booksCont {
-  margin: 20px auto;
-  color: #000;
+  display: none;
   border: 3px solid #004570;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .book {
   text-align: left;
-  background-color: #fff;
+  background-color: lightskyblue;
   padding: 7px;
   display: grid;
   grid-auto-flow: column;
@@ -140,7 +141,7 @@ nav {
 }
 
 .book:nth-child(even) {
-  background-color: lightskyblue;
+  background-color: #fff;
 }
 
 .bookTitle {
@@ -157,17 +158,9 @@ nav {
 }
 
 .removeBtn {
-  width: 100px;
-  padding: 5px 10px;
-  font-size: 0.9em;
-  font-weight: bold;
-  border: 2px solid #004570;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
   justify-self: right;
 }
-
 /* ########### Add Book Section ########## */
-
 #addBook {
   display: none;
   transition: all 0.5s;
@@ -186,17 +179,11 @@ input {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
-#addBtn {
-  padding: 10px 70px;
-  font-size: 1em;
-  font-weight: bold;
-  border: 3px solid #004570;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-  justify-self: center;
+.btns {
+  display: flex;
+  justify-content: space-between;
 }
-
 /* ########### Contact Section ########## */
-
 #contact {
   display: none;
   transition: all 0.5s;
@@ -237,20 +224,9 @@ input {
   font-weight: bold;
   margin: 0 5px;
 }
-
 /* ########### Footer ########## */
-
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  max-width: 880px;
-  width: 80%;
   background-color: #fff;
-  margin: 0 auto;
-  margin-top: 70px;
-  margin-bottom: 5px;
   height: 55px;
   padding: 0 15px;
   border: 3px solid #004570;
@@ -258,7 +234,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.1em;
+  font: 1.1em;
   font-weight: bold;
 }
 

@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="home.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
-    <title>Awesome Books</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
+  <title>Awesome Books</title>
+</head>
+
+<body>
+  <div class="bodyContainer">
     <header>
       <nav id="mainNav">
         <a class="logo" href="index.html">
-          <i class="fas fa-book-reader fa-lg"></i> Awesome Books</a
-        >
+          <i class="fas fa-book-reader fa-lg"></i> Awesome Books</a>
         <ul class="navLinks">
           <li class="navLink">
-            <a id="bookListBtn" href="#bookList">Book List</a>
+            <a id="bookListBtn" class="bookListBtn" href="#bookList">Book List</a>
           </li>
           <li class="navLink">
             <a id="addBookBtn" href="#addBook">Add Book</a>
@@ -41,29 +38,36 @@
       </nav>
       <div class="dateAndTime" id="dateAndTime">sdf</div>
     </header>
-    <div class="bodyContainer">
+    <div>
       <section id="bookList">
         <div class="container">
           <h2><i class="fas fa-book fa-lg"></i> Book List</h2>
-          <div class="booksCont" id="booksCont"></div>
+          <div class="bookContainer">
+            <div class="booksCont" id="booksCont"></div>
+            <button type="button" class="addNewBtn" id="addNewBtn">
+              Add New Book
+            </button>
+          </div>
         </div>
       </section>
       <section id="addBook">
-        <div class="container addBook">
-          <h2><i class="fas fa-book-medical fa-lg"></i> Add a new Book</h2>
-          <input type="text" id="title" placeholder="Add Book Title" required />
-          <input
-            type="text"
-            id="author"
-            placeholder="Add Book Author"
-            required
-          />
-          <button type="submit" id="addBtn">Add</button>
+        <div class="container">
+          <form class="addBook">
+            <h2><i class="fas fa-book-medical fa-lg"></i> Add a new Book</h2>
+            <input type="text" id="title" placeholder="Add Book Title" required />
+            <input type="text" id="author" placeholder="Add Book Author" required />
+            <div class="btns">
+              <button type="submit" id="addBtn">Add Book</button>
+              <button type="button" id="seeBookList">See Book List</button>
+            </div>
+          </form>
         </div>
       </section>
       <section id="contact" class="contact">
         <div class="container">
-          <h2><i class="fas fa-address-book fa-lg"></i> Contact Information</h2>
+          <h2>
+            <i class="fas fa-address-book fa-lg"></i> Contact Information
+          </h2>
           <div class="contactInfo">
             <h4>
               Do you have any questions or want to say "Hello"?<br />You can
@@ -72,28 +76,18 @@
             <ul>
               <li>
                 Our e-mail:
-                <a href="mailto:eng.omarmuhammad@gmail.com"
-                  >eng.omarmuhammad@gmail.com</a
-                >
+                <a href="mailto:eng.omarmuhammad@gmail.com">eng.omarmuhammad@gmail.com</a>
               </li>
               <li>
                 Our phone number:
                 <i class="fab fa-whatsapp"></i>
-                <a
-                  href="https://api.whatsapp.com/send/?phone=%2B201114277131&text&app_absent=0"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >+201114277131</a
-                >
+                <a href="https://api.whatsapp.com/send/?phone=%2B201114277131&text&app_absent=0"
+                  rel="noopener noreferrer" target="_blank">+201114277131</a>
               </li>
               <li>
                 Our address: <i class="fas fa-map-marker-alt"></i>
-                <a
-                  href="https://goo.gl/maps/a5axKGRC7WHKhkq1A"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >Alexanderia, Egypt</a
-                >
+                <a href="https://goo.gl/maps/a5axKGRC7WHKhkq1A" rel="noopener noreferrer" target="_blank">Alexanderia,
+                  Egypt</a>
               </li>
             </ul>
           </div>
@@ -103,12 +97,12 @@
     <footer>
       <p>
         Copyright
-        <a class="footerLink" href="mailto:eng.omarmuhammad@gmail.com"
-          >Omar Muhammad</a
-        >
+        <a class="footerLink" href="mailto:eng.omarmuhammad@gmail.com">Omar Muhammad</a>
         &copy;2021
       </p>
     </footer>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
