@@ -115,5 +115,12 @@ addNewBtn.addEventListener("click", () => {
 // ################ Add Date and Time to the page  ################
 
 const dateAndTime = document.getElementById("dateAndTime");
-dateAndTime.innerHTML =
+const setTime = function () {
+  dateAndTime.innerHTML =
   window.luxon.DateTime.local().toFormat("dd LLL, yyyy | t");
+}
+
+setTime();
+
+setInterval(function(){setTime();},1000);
+
