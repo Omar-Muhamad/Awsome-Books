@@ -2,6 +2,8 @@
 
 # Awesome Books
 
+**This Project is a single page application about Book list which you can add your favorite books**
+
 **What I did in this project:**
 
 1.  Add book class with constructor.
